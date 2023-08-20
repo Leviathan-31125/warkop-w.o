@@ -3,37 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+    <!-- Custom CSS Style  -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- Font Awesome 5.15  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Warkop W.O</title>
+
 </head>
 <body>
     <header>
-        <div class="jumbotron">
-            <img src="img/logo.png" alt="Warkop W.O">
-            <h2>Enjoy Your Day with a Cup of Coffee</h2>
-        </div>
         <nav>
-
+            <img id="nav-logo" src="img/logo.png" alt="Warkop W.O">
+            <ul>
+                <li><a href="#home-page">Beranda</a></li>
+                <li><a href="#coffee-menu">Coffee Menu</a></li>
+                <li><a href="#review">Testimoni</a></li>
+                <li><a href="#contact-us">Kontak Kami</a></li>
+            </ul>
         </nav>
+        <div class="search-bar">
+            <input type="search" placeholder="search menu...">
+            <div class="icon-search"><a href="#menu"><i class="fas fa-search" style="color: #ffffff;"></i></a></div>
+        </div>
     </header>
     <main>
         <div class="content">
-            <section class="home-page">
-
+            <h1>Enjoy Your Day with a Cup of Coffee</h1>
+            <section id="home-page">
+                <img src="https://asset.kompas.com/crops/B4azCNVvpOxFCwtClowXmCqWGB0=/43x0:1280x825/750x500/data/photo/2021/09/13/613ede55094fb.jpg" alt="Coffee Shop">
+                <div class="detail-content">
+                    <p>
+                        Warkop W.O adalah sebuah warung kopi sederhana yang berfokus pada kopi hitam dengan berbagai jenis kopi dan varian. 
+                        Produk unggulan kami adalah kopi hitam yang menyajikan kopi murni seperti arabika, robusta, toraja, ekselsa, dan 
+                        lain-lain. Dengan teknik khusus yang dimiliki Warkop W.O, kami menyajikan seoptimal mungkin cita rasa dan khas dari 
+                        masing-masing jenis kopi. Tidak hanya itu, kami juga menyediakan berbagai macam pelayanan dan menu selain kopi. 
+                        Layanan yang paling istimewa dari Warkop W.O adalah “Get and Set Your Coffee Party” memungkinkan kamu menikmati kopi 
+                        kami bersama teman, kerabat, atau seseorang yang spesial di tempat yang kamu  inginkan. Tidak hanya itu, kami juga 
+                        menawarkan segala pelayanan kopi sesuai permintaan dengan cara kontak dan sampaikan layanan spesial yang kamu inginkan.
+                    </p>
+                    <a href="#">Selengkapnya</a>
+                </div>
             </section>
-            <section class="coffee-menu">
-
+            <h2>Menu Kami</h2>
+            <section id="coffee-menu">
+                <div class="menu-item card">
+                    <div class="menu-img">
+                        <img src="img/black-coffee.png" alt="Kopi Hitam">
+                    </div>
+                    <div class="menu-detail">
+                        <p>Black Coffee</p>
+                        <div class="rate">
+                            <i class="fas fa-star" style="color: #9dff0a;"></i>
+                            <span>4.5</span>
+                        </div>
+                    </div>
+                    <div class="price">Rp 12.000</div>
+                </div>
+                <div class="menu-item card">
+                    <div class="menu-img">
+                        <img src="img/frape-coffee.png" alt="Kopi Hitam">
+                    </div>
+                    <div class="menu-detail">
+                        <div class="rate">
+                            <i class="fas fa-star" style="color: #9dff0a;"></i>
+                            <span>4.2</span>
+                        </div>
+                        <p>Frape Coffee</p>
+                    </div>
+                    <div class="price">Rp 10.000</div>
+                </div>
+                <div class="menu-item card">
+                    <div class="menu-img">
+                        <img src="img/cappuchino-coffee.png" alt="Kopi Hitam">
+                    </div>
+                    <div class="menu-detail">
+                        <div class="rate">
+                            <i class="fas fa-star" style="color: #9dff0a;"></i>
+                            <span>4.0</span>
+                        </div>
+                        <p>Cappuchino</p>
+                    </div>
+                    <div class="price">Rp 17.000</div>
+                </div>
+                <div class="menu-item card">
+                    <div class="menu-img">
+                        <img src="img/milkshake.png" alt="Kopi Hitam">
+                    </div>
+                    <div class="menu-detail">
+                        <div class="rate">
+                            <i class="fas fa-star" style="color: #9dff0a;"></i>
+                            <span>3.9</span>
+                        </div>
+                        <p>Milkshake</p>
+                    </div>
+                    <div class="price">Rp 9.000</div>
+                </div>
+                <div class="menu-item card">
+                    <div class="menu-img">
+                        <img src="img/food.png" alt="Kopi Hitam">
+                    </div>
+                    <div class="menu-detail">
+                        <div class="rate">
+                            <i class="fas fa-star" style="color: #9dff0a;"></i>
+                            <span>3.7</span>
+                        </div>
+                        <p>Food & Snack</p>
+                    </div>
+                    <div class="price">Rp 5.000</div>
+                </div>
+                <div class="menu-more">
+                    <a href="#menu"><i class="fas fa-chevron-right fa-2x" style="color: #deba38;"></i></a>
+                </div>
             </section>
-            <section class="coffeeshop-rate">
-
+            <h2>Testimoni dan Review</h2>
+            <section id="review">
+                <div class="review-item card">
+                    <img src="img/reviewer/Alfikiyar Tirta Haidar.png" alt="W.O Review">
+                    <div class="review-detail">
+                        <div class="review-message">
+                            <p>
+                                <q>Sebagai Developer, kalau worktime disini cukup nyaman sih. Selain kopi-nya yang nikmat, 
+                                fasilitas yang aku butuhin ada semua mulai dari wifi yang kenceng, listrik, dan tentunya 
+                                makanan juga ada</q>
+                            </p>
+                        </div>
+                        <div class="reviewer">
+                            <p>Alfikiyar Tirta Haidar</p><cite>Software Engineer</cite>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item card">
+                    <img src="img/reviewer/Najwa Fathiyyah.png" alt="W.O Review">
+                    <div class="review-detail">
+                        <div class="review-message">
+                            <p>
+                                <q>Sering kesini karena minumannya enak banget, terutama Milkshake dan Choco Drink nya. 
+                                Biasanya cangs sama temen kalau ga gitu pesen untuk kerja kelompok dirumah atau kampus.</q>
+                            </p>
+                        </div>
+                        <div class="reviewer">
+                            <p>Najwa Fathiyah</p> <cite>Mahasiswa</cite>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <a href=""><div class="review-more card">
+                <p>Lebih lengkap</p>
+                <i class="fas fa-angle-down fa-2x" style="color: #deba38;"></i>
+            </div></a>
         </div>
         <aside>
-
+            <ul class="social-media">
+                <li><a href=""><i class="fas fa-headset"></i></a></li>
+                <li><a href=""><i class="fas fa-book"></i></a></li>
+                <li><a href=""><i class="fas fa-shipping-fast"></i></a></li>
+                <li><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
+            </ul>
         </aside>
     </main>
     <footer>
-
+        <div id="contact-us">
+            <div class="our-service">
+                <img src="img/logo.png" alt="Warkop W.O">
+                <div class="detail-service">
+                    <h3>Layanan Kami</h3>
+                    <ul>
+                        <li><a href="">Drive Thrue</a></li>
+                        <li><a href="">Get & Set Coffee Party</a></li>
+                        <li><a href="">Hangout</a></li>
+                        <li><a href="">Get Order</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-us">
+                <h3>Kontak Kami</h3>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <div class="icon-contact">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <span>Whatsapp</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-contact">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <span>Instagram</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-contact">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon-contact">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <span>Tiktok</span>
+                    </div>
+                </div>
+                <a href="" class="mail-contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>ATHaidar.Dev@gmail.com</span>
+                </a>
+            </div>
+            <div class="address">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d989.241126228993!2d112.7742465!3d-7.3578756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5fff3e6a11d%3A0xad1e6d8bafe0695!2sWarkop%20W.O!5e0!3m2!1sid!2sid!4v1692515668678!5m2!1sid!2sid" width="200" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="detail-address">
+                    <h3>Alamat</h3>
+                    <p>JL KH Hasan Bajuri No.36, Tambak Rejo, Waru, Sidoarjo, Jawa Timur (61256)</p>
+                    <p>+628580-8322-783</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>ATHaidar Developer © 2023</p>
+        </div>
     </footer>
 </body>
 </html>

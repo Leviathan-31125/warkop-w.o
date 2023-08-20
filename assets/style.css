@@ -1,15 +1,502 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:wght@500;700&family=Quicksand:wght@500;700&display=swap');
 
 :root {
-    --blackwo: #434446;
-    --orangewo: #ecc539;
+    --blackwo: #202020;
+    --orangewo: #DEBA38;
+    --whitewo: rgb(243, 243, 243);
 }
 
-.jumbotron {
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--blackwo);
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex: 1 1;
+
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav-logo {
+    width: 50px;
+    margin: 5px;
+}
+
+header nav ul {
+    padding-left: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+header nav ul > li {
+    list-style: none;
+}
+
+header nav ul > li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+header nav ul > li a:hover {
+    color: var(--blackwo);
     background-color: var(--orangewo);
-    font-family: 'Poppins';
-    font: 500;
+    font-weight: bold;
+}
+
+.search-bar {
+    background-color: var(--orangewo);
+    height: 2rem;
+    border-radius: 5px;
+
+    display: flex;
+    gap: 0;
+}
+
+.search-bar input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 2px var(--orangewo) solid;
+}
+
+.icon-search {
+    align-self: center;
+    margin: 5px;
+}
+
+
+main {
+    max-width: 1200px;
+    margin-inline: auto;
+    margin-top: 5rem;
+}
+
+h1 {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 3rem;
+}
+
+#home-page {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: justify;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#home-page img {
+    max-width: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1rem;
+}
+
+#home-page .detail-content {
+    max-width: 750px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+#home-page .detail-content a {
+    color: var(--blackwo);
+    border: .2rem var(--blackwo) solid;
+    
+    align-self: end;
+    text-decoration: none;
+    font-weight: 500;
+
+    border-radius: .7rem;
+    padding: .5rem;
+
+    transition: all .2s ease-in-out;
+
+}
+
+#home-page .detail-content a:hover {
+    color: var(--orangewo);
+    background-color: var(--blackwo);
+    font-weight: 500;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#coffee-menu {
+    display: flex;
+    flex: 1 1;
+    gap: .8rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.menu-item {
+    padding: 0;
+}
+
+.menu-more {
+    margin-left: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 50px;
+    height: 50px;
+    background-color: var(--blackwo);
+    border-radius: 50%;
+
+    font-size: 20;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.menu-more:hover {
+   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-detail {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.menu-detail p {
+    margin: 0;
+}
+
+.menu-item .price {
+    color: var(--orangewo);
+    background-color: var(--blackwo);
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+#review {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex: 1 1;
+    gap: 1rem;
+}
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.review-item img {
+    max-height: 250px;
+}
+
+.review-item .review-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-item .review-detail .reviewer p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+
+    height: 100%;
+    display: flex;
+}
+
+aside .social-media {
+    padding: 1.5rem 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: var(--blackwo);
+   
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+aside .social-media li {
+    list-style-type: none;
+}
+
+aside .social-media li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--orangewo);
+    transition: all .2 ease-in-out;
+}
+
+aside .social-media li a:hover {
+    color: white;
+}
+
+.review-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    margin: 20px auto;
+    background-color: var(--blackwo);
+    color: white;
+    padding: 5px;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.review-more p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+footer {
+    background-color: var(--blackwo);
+    text-align: center;
+    color: white;
+}
+
+footer #contact-us{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.our-service {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+footer img {
+    max-width: 130px;
+}
+
+h3 {
+   padding: 0;
+   margin: 0;
+}
+
+.detail-service ul {
+    padding: 0;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.detail-service ul > li {
+    list-style: none;
+}
+
+.detail-service ul > li a {
+    color: white;
+}
+
+.detail-service ul > li a:hover {
+    color: var(--orangewo);
+
+}
+
+#contact-us .address {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.mail-contact {
+    border: 1px var(--orangewo) solid;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--orangewo);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.mail-contact span {
+    color: white;
+}
+
+.mail-contact:hover, .mail-contact:hover span {
+    background-color: var(--orangewo);
+    color: var(--blackwo);
+}
+
+.detail-address {
+    max-width: 250px;
+}
+
+.detail-address p {
+    margin: 10px 0;
+}
+
+.contact-list {
+    display: flex;
+    gap: 0.5rem;
+    margin-block: 10px;
+}
+
+.contact-item {
+    background-color: white;
+    color: var(--orangewo);
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    transition: ease-in-out .3s;
+}
+
+.icon-contact {
+    background-color: white;
+    color: var(--orangewo);
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-item span {
+    width: 0;
+}
+
+.contact-item:hover {
+    width: 100px;
+    gap: 0;
+}
+
+.contact-item:hover span {
+    width: 80px;
+}
+
+.copyright {
+    background-color: var(--orangewo);
+    color: var(--blackwo);
+
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+
+    .search-bar {
+        visibility: hidden;
+        width: 0;
+    }
+
+    #review{
+        flex-wrap: wrap;
+    }
+
+    .review-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav {
+        margin: auto;
+    }
+
+    main {
+        margin-inline: .5rem;
+    }
+
+    #coffee-menu {
+        justify-content: center;
+        gap: 1.5rem;
+    }
 }
