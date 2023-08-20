@@ -471,11 +471,54 @@ h3 {
     margin: 0;
 }
 
+@media screen and (max-width: 1200px) {
+    main {
+        padding-inline: 20px;
+    }
+
+    #coffee-menu {
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
+    header {
+        padding: 0;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    header #nav-logo {
+        width: 100px;
+        margin: 0;
+    }
+
+    header nav ul {
+        justify-content: center;
+        font-size: .9rem;
+        gap: 0rem;
+        margin-top: .3rem;
+    }
 
     .search-bar {
         visibility: hidden;
         width: 0;
+    }
+
+    .content h1 {
+        margin: 7rem 0 1rem 0;
+    }
+
+    #home-page {
+        justify-content: center;
+        gap: 0;
+    }
+
+    #home-page img {
+        max-width: 390px;
     }
 
     #review{
@@ -487,16 +530,40 @@ h3 {
         justify-content: center;
     }
 
-    header nav {
-        margin: auto;
+    footer #contact-us { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 15px;
     }
 
-    main {
-        margin-inline: .5rem;
-    }
+    .address {
+        text-align: center;
 
-    #coffee-menu {
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 1.5rem;
+    }
+
+    .contact-us {
+        text-align: center;
+    }
+
+    .contact-list {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:  475px) {
+    .content h1 {
+        margin: 10rem 0 1rem 0;
+    }
+
+    .menu-item, .menu-item img {
+        width: 150px;
+    }
+
+    .menu-detail {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
