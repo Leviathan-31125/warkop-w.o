@@ -33,7 +33,7 @@
             <h1>Enjoy Your Day with a Cup of Coffee</h1>
             <section id="home-page">
                 <img src="https://asset.kompas.com/crops/B4azCNVvpOxFCwtClowXmCqWGB0=/43x0:1280x825/750x500/data/photo/2021/09/13/613ede55094fb.jpg" alt="Coffee Shop">
-                <div class="detail-content">
+                <article class="detail-content">
                     <p>
                         Warkop W.O adalah sebuah warung kopi sederhana yang berfokus pada kopi hitam dengan berbagai jenis kopi dan varian. 
                         Produk unggulan kami adalah kopi hitam yang menyajikan kopi murni seperti arabika, robusta, toraja, ekselsa, dan 
@@ -44,7 +44,7 @@
                         menawarkan segala pelayanan kopi sesuai permintaan dengan cara kontak dan sampaikan layanan spesial yang kamu inginkan.
                     </p>
                     <a href="#">Selengkapnya</a>
-                </div>
+                </article>
             </section>
             <h2>Menu Kami</h2>
             <section id="coffee-menu">
@@ -149,11 +149,13 @@
                     </div>
                 </div>
             </section>
-            <a href=""><div class="review-more card">
+            <a href="" class="review-more card">
                 <p>Lebih lengkap</p>
                 <i class="fas fa-angle-down fa-2x" style="color: #deba38;"></i>
-            </div></a>
+            </a>
         </div>
+
+        <!-- SideBar  -->
         <aside>
             <ul class="social-media">
                 <li><a href=""><i class="fas fa-headset"></i></a></li>
@@ -161,7 +163,39 @@
                 <li><a href=""><i class="fas fa-shipping-fast"></i></a></li>
                 <li><a href=""><i class="fas fa-map-marker-alt"></i></a></li>
             </ul>
+
+            <button id="developer">
+                <i class="fas fa-angle-left fa-2x"></i>
+                <span>Developer</span>
+            </button>
         </aside>
+
+        <!-- Modal Developer Profile  -->
+        <div class="developer-profile hidden">
+            <div class="detail-header">
+                <h2>Developer Warkop W.O</h2>
+                <button class="close-btn"><i class="fas fa-times-circle fa-2x"></i></button>
+            </div>
+            <div class="detail-developer">
+                <img src="img/reviewer/Alfikiyar Tirta Haidar.png" alt="Developer Warkop W.O">
+                <article>
+                    <p>
+                        Halo, temen - temen. Kenalin, aku Haidar selaku pengembang dari website sekaligus manager digitalisasi
+                        dari Warkop W.O. Mungkin ada yang heran, sekelas warkop kok tampak modern hehehe. Secara visi pribadi 
+                        saya ingin mengangkat kelas UMKM di Indonesia menjadi lebih modern melalui digitalisasi, dan untuk
+                        langkah awalnya dengan implementasi pada Warkop W.O. Tentunya visi tersebut tidak bisa dilakukan seorang
+                        diri, untuk itu saya ingin bertukar visi dan mengajak semua developer untuk mengembangkan karya dengan
+                        berkolaborasi bersama masyarakat terutama UMKM di Indonesia.
+                    </p>
+                    <div class="reviewer">
+                        <p>Alfikiyar Tirta Haidar</p><cite>IT Project Manager</cite>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="overlay hidden">
+            
+        </div>
     </main>
     <footer>
         <div id="contact-us">
@@ -223,5 +257,7 @@
             <p>ATHaidar Developer © 2023</p>
         </div>
     </footer>
+
+    <script src="script/custom.js"></script>
 </body>
 </html>
